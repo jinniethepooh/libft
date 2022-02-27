@@ -6,7 +6,7 @@
 /*   By: cchetana <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/20 11:17:28 by cchetana          #+#    #+#             */
-/*   Updated: 2022/02/20 11:22:29 by cchetana         ###   ########.fr       */
+/*   Updated: 2022/02/27 13:35:23 by cchetana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,13 @@
 void	ft_bzero(void *s, size_t n)
 {
 	size_t	i;
-	char	*t;
+	char	*tmp;
 
 	i = 0;
-	t = (char *)s;
+	tmp = (char *)s;
 	while (i < n)
 	{
-		t[i] = '\0';
+		tmp[i] = '\0';
 		++i;
 	}
 }

@@ -6,7 +6,7 @@
 /*   By: cchetana <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/20 13:22:25 by cchetana          #+#    #+#             */
-/*   Updated: 2022/02/20 13:25:07 by cchetana         ###   ########.fr       */
+/*   Updated: 2022/02/27 13:59:31 by cchetana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,6 @@ char	*ft_strrchr(const char *s, int c)
 	if (c == '\0' && s[i] == '\0')
 		return ((char *)&s[i]);
 	if (pos == -1)
-		return (0);
+		return (NULL);
 	return ((char *)&s[pos]);
 }

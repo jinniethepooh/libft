@@ -6,13 +6,13 @@
 /*   By: cchetana <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/20 22:13:22 by cchetana          #+#    #+#             */
-/*   Updated: 2022/02/21 00:03:44 by cchetana         ###   ########.fr       */
+/*   Updated: 2022/02/27 13:32:50 by cchetana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_wcount(const char *s, char c)
+static int	ft_wcount(const char *s, char c)
 {
 	int	count;
 
@@ -29,7 +29,7 @@ int	ft_wcount(const char *s, char c)
 	return (count);
 }
 
-int	ft_wlen(const char *s, char c)
+static int	ft_wlen(const char *s, char c)
 {
 	int	len;
 
@@ -39,12 +39,10 @@ int	ft_wlen(const char *s, char c)
 	return (len);
 }
 
-char	*ft_wword(const char *s, char c)
+static char	*ft_wword(const char *s, char c)
 {
-	size_t	i;
 	char	*word;
 
-	i = 0;
 	word = (char *)malloc(ft_wlen(s, c) + 1);
 	if (word == NULL)
 		return (NULL);

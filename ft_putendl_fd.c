@@ -6,7 +6,7 @@
 /*   By: cchetana <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/22 22:06:13 by cchetana          #+#    #+#             */
-/*   Updated: 2022/02/22 22:12:27 by cchetana         ###   ########.fr       */
+/*   Updated: 2022/02/27 12:01:32 by cchetana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,6 @@
 
 void	ft_putendl_fd(char *s, int fd)
 {
-	int	i;
-
-	i = 0;
 	ft_putstr_fd(s, fd);
 	ft_putchar_fd('\n', fd);
 }

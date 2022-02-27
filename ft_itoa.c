@@ -6,13 +6,13 @@
 /*   By: cchetana <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/21 00:06:06 by cchetana          #+#    #+#             */
-/*   Updated: 2022/02/26 01:04:59 by cchetana         ###   ########.fr       */
+/*   Updated: 2022/02/27 13:37:11 by cchetana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_unit(int n)
+static int	ft_unit(int n)
 {
 	int	unit;
 
@@ -30,7 +30,7 @@ int	ft_unit(int n)
 	return (unit + 1);
 }
 
-char	*ft_fillnbr(char *nbr, long n, int i)
+static char	*ft_fillnbr(char *nbr, long n, int i)
 {
 	if (n == 0)
 		nbr[i] = '0';
@@ -43,7 +43,7 @@ char	*ft_fillnbr(char *nbr, long n, int i)
 	return (nbr);
 }
 
-char	*ft_strrev(char *str, int len)
+static char	*ft_strrev(char *str, int len)
 {
 	int		i;
 	char	t;
